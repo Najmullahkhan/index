@@ -1,0 +1,196 @@
+
+  
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.datatables.net/2.1.7/css/dataTables.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.3/css/buttons.dataTables.min.css"> <!-- Include Buttons CSS -->
+    <title>Data Table with Export Buttons</title>
+</head>
+<body>
+
+    <table class="table" id="myTable">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>01</td>
+                <td>ahmad</td>
+                <td>20</td>
+                <td>Islamabad</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Raza</td>
+                <td>23</td>
+                <td>johnsberg</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Aimir</td>
+                <td>21</td>
+                <td>birmingham</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>Shahzaib</td>
+                <td>24</td>
+                <td>boston</td>
+            </tr>
+            <tr>
+                <td>05</td>
+                <td>Shameer</td>
+                <td>20</td>
+                <td>Islamabad</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Hamza</td>
+                <td>24</td>
+                <td>udesa</td>
+            </tr>
+            <tr>
+                <td>06</td>
+                <td>Naeem</td>
+                <td>26</td>
+                <td>chicago</td>
+            </tr>
+            <tr>
+                <td>07</td>
+                <td>Fahad</td>
+                <td>26</td>
+                <td>NYC</td>
+            </tr>
+            <tr>
+                <td>08</td>
+                <td>Hamid</td>
+                <td>30</td>
+                <td>mexicon</td>
+            </tr>
+            <tr>
+                <td>09</td>
+                <td>Najam</td>
+                <td>24</td>
+                <td>damam</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Kabir</td>
+                <td>23</td>
+                <td>sharjah</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>Riaz</td>
+                <td>25</td>
+                <td>dubai</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Uaman</td>
+                <td>29</td>
+                <td>washington</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Shayan Shah</td>
+                <td>31</td>
+                <td>calofornai</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Zayid</td>
+                <td>21</td>
+                <td>birmingham</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>Farzan</td>
+                <td>24</td>
+                <td>boston</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td>Abdul Rafi</td>
+                <td>20</td>
+                <td>Islamabad</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>Ahmad sajid</td>
+                <td>23</td>
+                <td>johnsberg</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>Muteeb</td>
+                <td>21</td>
+                <td>birmingham</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>Alayan</td>
+                <td>24</td>
+                <td>boston</td>
+            </tr>
+            <tr>
+                <td>01</td>
+                <td></td>
+                <td>20</td>
+                <td>Islamabad</td>
+            </tr>
+            <tr>
+                <td>02</td>
+                <td>michael</td>
+                <td>23</td>
+                <td>johnsberg</td>
+            </tr>
+            <tr>
+                <td>03</td>
+                <td>natasha</td>
+                <td>21</td>
+                <td>birmingham</td>
+            </tr>
+            <tr>
+                <td>04</td>
+                <td>alxandra</td>
+                <td>24</td>
+                <td>boston</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.datatables.net/2.1.7/js/dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.3/js/dataTables.buttons.min.js"></script> <!-- Include Buttons JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script> <!-- For Excel export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script> <!-- For PDF export -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script> <!-- For PDF fonts -->
+    <script src="https://cdn.datatables.net/buttons/2.3.3/js/buttons.html5.min.js"></script> <!-- Include HTML5 buttons -->
+    <script src="https://cdn.datatables.net/buttons/2.3.3/js/buttons.print.min.js"></script> <!-- For print button -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('#myTable').DataTable({
+                dom: 'Bfrtip', // Define the layout of the table
+                buttons: [
+                    'copy', 'excel', 'pdf', 'print','csv'// Add buttons here
+                ]
+            });
+        });
+
+    </script>
+</body>
+</html>
